@@ -1,0 +1,104 @@
+.calculator {
+    background-color: rgb(31, 31, 31);
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid rgba(23, 22, 22, 0.657);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+
+.calculator-screen {
+    width: 95%;
+    height: 20%;
+    background-color: #7BC14D;
+    margin: 20px;
+    border-radius: 15px;
+    border: 4px solid #628b47;
+    box-sizing: border-box;
+    font-family: Roboto;
+    text-align: end;
+    font-size: 7em;
+    padding: 10px;
+    font-weight: bold;
+    padding-right: 20px;
+
+
+}
+
+.calculator-body {
+    width: 95%;
+    height: 80%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20%;
+    margin-top: 10px;
+}
+
+
+
+.parpadea {
+
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
