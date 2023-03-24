@@ -24,11 +24,12 @@
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    justify-content: center;
 }
 
 .app-calculator {
     background-color: rgba(20, 30, 41, 0.5);
-    width: 30%;
+    width: 40%;
     margin: 10px;
     margin-right: 5px;
     display: flex;
@@ -39,7 +40,32 @@
 
 .app-description {
     background-color: rgba(20, 30, 41, 0.5);
-    width: 70%;
+    width: 40%;
     margin: 10px;
     margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-description p {
+    /* font-size: 3em; */
+    width: 90%;
+    font-family: Roboto;
+    color: aliceblue;
+    text-transform: uppercase;
+    /* margin: 15px; */
+}
+
+.description-title {
+    font-size: 4em;
+}
+
+.description-subtitle {
+    font-size: 2em;
+}
+
+.description-text {
+    margin-top: 50px;
 }
