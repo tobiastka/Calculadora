@@ -5,13 +5,13 @@ import "../stylesheets/Calculator.css";
 
 function Calculator() {
 
-    const [Screen, setScreen] = useState("");
+    const [screen, setScreen] = useState("");
 
     return (
         <div className='calculator '>
             <div className="calculator-screen ">
-                <span>{Screen}</span>
-                <span className='parpadea'>{Screen === "" ? "Hi ^^ |" : "|"}</span>
+                <span>{screen}</span>
+                <span className='parpadea'>{screen === "" ? "Hi ^^ |" : "|"}</span>
             </div>
             <div className="calculator-body">
                 <div className="row">
@@ -41,7 +41,7 @@ function Calculator() {
                 <div className="row">
                     <ButtonCalculator screenHandler={setScreen} character={0} />
                     <ButtonCalculator screenHandler={setScreen} character={"."} />
-                    <ButtonCalculator Screen={Screen} screenHandler={setScreen} character={"="} />
+                    <ButtonCalculator screen={screen} screenHandler={setScreen} character={"="} />
                 </div>
             </div>
         </div>
